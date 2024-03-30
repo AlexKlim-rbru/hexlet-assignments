@@ -1,0 +1,20 @@
+---
+
+spring:
+  jpa:
+    show-sql: true
+  output:
+    ansi:
+      enabled: always
+logging:
+  level:
+    sql: debug
+    org:
+      hibernate:
+        SQL: DEBUG
+        type:
+          descriptor:
+            sql: TRACE
+        orm:
+          jdbc:
+            bind: TRACE
